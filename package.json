@@ -1,0 +1,43 @@
+{
+  "name": "webext-ttl-cache",
+  "version": "0.0.0",
+  "description": "TTL cache for web extensions. Powered by @isaacs/ttlcache",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banyudu/webext-ttl-cache.git"
+  },
+  "keywords": [
+    "webext",
+    "ttl",
+    "cache",
+    "chrome",
+    "extension"
+  ],
+  "author": "banyudu <banyudu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/banyudu/webext-ttl-cache/issues"
+  },
+  "homepage": "https://github.com/banyudu/webext-ttl-cache#readme",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@isaacs/ttlcache": "^1.4.1"
+  }
+}
